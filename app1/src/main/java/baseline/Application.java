@@ -1,15 +1,25 @@
-package pack1;
+package baseline;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Application {
+public class Application extends javafx.application.Application {
+
     public static void main(String[] args) {
-        ToDoScene tds = new ToDoScene();
-        Stage stage = new Stage();
-        try {
-            tds.start(stage);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("todolists.fxml"));
+
+        Scene scene = new Scene(root);
+        primaryStage.setScene(scene);
+
+        primaryStage.setTitle("Todo List Manager");
+        primaryStage.show();
     }
 }

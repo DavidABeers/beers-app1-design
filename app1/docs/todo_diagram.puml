@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Application{
++main()
++start()
+}
+class ToDoController{
+-saveClicked()
+-openClicked()
+-newListClicked()
+-editListClicked()
+-deleteListClicked()
+-newItemClicked()
+-deleteItemClicked()
+-completeCheckboxClicked()
+-radioButtonClicked()
+}
+
+Application--ToDoController
+@enduml

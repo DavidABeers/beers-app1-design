@@ -23,5 +23,5 @@ test {
     useJUnitPlatform()
 }
 application{
-    mainClass = "pack1.Application"
+    mainClass = "baseline.Application"
 }
