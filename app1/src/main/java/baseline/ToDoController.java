@@ -1,8 +1,10 @@
+/*
+ *  UCF COP3330 Fall 2021 Application Assignment 1 Solution
+ *  Copyright 2021 David Beers
+ */
 package baseline;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 
 public class ToDoController {
 
