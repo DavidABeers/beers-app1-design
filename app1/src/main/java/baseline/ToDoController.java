@@ -13,8 +13,25 @@ public class ToDoController {
 * Declare text area and field
 * Declare file menu*/
 
+    public void makeSaveFile(String filename){
+        // open a file writer
+        // for each list selected
+            // write list name
+            // for each item
+                // write item, description, and due date
+    }
+
+    private void openSaveFile(String filename){
+        // open a file object
+        // open a file scanner
+        // while save has a next line
+            // put list to list ListView
+            // while next line is not another list
+                // put items to items listView
+    }
+
     private void saveClicked(ActionEvent event){
-        // saves the current list of to do lists with the name given by user
+        // saves the currently selected to do lists using makeSaveFile
     }
 
     private void openClicked(ActionEvent event){
